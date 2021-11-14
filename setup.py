@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="talk-in-code",                     # This is the name of the package
-    version="0.0.1",                        # The initial release version
+    version="0.0.2",                        # The initial release version
     author="Itanú Romero",                     # Full name of the author
     description="Transform natural language strings on Python runnable code",
     long_description=long_description,      # Long description read from the the readme file
