@@ -4,21 +4,21 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="talk-in-code",                     # This is the name of the package
-    version="0.0.3",                        # The initial release version
-    author="Itanú Romero",                     # Full name of the author
+    name="talk-in-code",
+    version="0.0.3",
+    author="Itanú Romero",
     description="Transform natural language strings on Python runnable code",
-    long_description=long_description,      # Long description read from the the readme file
+    long_description=long_description,
     long_description_content_type="text/markdown",
-    packages=find_packages(where="talk_in_code", exclude=("tests",)),    # List of all python modules to be installed
+    packages=find_packages(where="talk_in_code", exclude=("tests",)),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-    ],                                      # Information to filter the project on PyPi website
-    python_requires='>=3.8',                # Minimum version requirement of the package
-    py_modules=["talk_in_code"],             # Name of the python package
-    package_dir={'': 'talk_in_code'},     # Directory of the source code of the package
-    install_requires=[],                     # Install other dependencies if any
+    ],
+    python_requires='>=3.8',
+    py_modules=["talk_in_code"],
+    package_dir={'': 'talk_in_code'},
+    install_requires=[],
     dependency_links=['https://github.com/ItanuRomero/talk-in-code']
 )
