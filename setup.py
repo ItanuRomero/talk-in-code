@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="talk-in-code",                     # This is the name of the package
-    version="0.0.2",                        # The initial release version
+    version="0.0.3",                        # The initial release version
     author="Itanú Romero",                     # Full name of the author
     description="Transform natural language strings on Python runnable code",
     long_description=long_description,      # Long description read from the the readme file
@@ -18,6 +18,7 @@ setup(
     ],                                      # Information to filter the project on PyPi website
     python_requires='>=3.8',                # Minimum version requirement of the package
     py_modules=["talk_in_code"],             # Name of the python package
-    package_dir={'':'talk_in_code'},     # Directory of the source code of the package
-    install_requires=[]                     # Install other dependencies if any
+    package_dir={'': 'talk_in_code'},     # Directory of the source code of the package
+    install_requires=[],                     # Install other dependencies if any
+    dependency_links=['https://github.com/ItanuRomero/talk-in-code']
 )
