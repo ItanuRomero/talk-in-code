@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="talk-in-code",
-    version="0.0.8",
+    version="0.0.4",
     author="Itanú Romero",
     description="Transform natural language strings on Python runnable code",
     long_description=long_description,
