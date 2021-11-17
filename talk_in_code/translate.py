@@ -1,15 +1,17 @@
-import pt_translator
+from .pt_translator import (
+    call_function, define_function, print_structure, declare_variable
+)
 
 
 def from_pt(natural_text: str):
     if natural_text.split(' ')[0] == 'print':
-        code = pt_translator.print_structure(natural_text)
+        code = print_structure(natural_text)
     elif natural_text.split(' ')[0] == 'variável':
-        code = pt_translator.declare_variable(natural_text)
+        code = declare_variable(natural_text)
     elif natural_text.split(' ')[0] == 'defina':
-        code = pt_translator.define_function(natural_text)
+        code = define_function(natural_text)
     elif natural_text.split(' ')[0] == 'chame':
-        code = pt_translator.call_function(natural_text)
+        code = call_function(natural_text)
     return code
 
 
